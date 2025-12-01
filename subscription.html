@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Subscription Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            padding: 40px;
+        }
+
+        .container {
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #0d6efd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Email Subscription Form</h2>
+
+        <form id="subscriptionForm">
+
+            <label>Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Subscription Type:</label>
+            <select id="subscriptionType" required>
+                <option value="" disabled selected>Select type</option>
+                <option value="blog">Blog Subscription</option>
+                <option value="marketing">Marketing Subscription</option>
+                <option value="email-reminder">Email Reminder</option>
+            </select>
+
+            <label>Frequency:</label>
+            <select id="frequency" required>
+                <option value="" disabled selected>Select frequency</option>
+                <option value="twice-monthly">Twice Monthly</option>
+                <option value="monthly">Once Monthly</option>
+                <option value="bi-monthly">Every 2 Months</option>
+                <option value="quarterly">Quarterly</option>
+            </select>
+
+            <button type="submit">Submit
